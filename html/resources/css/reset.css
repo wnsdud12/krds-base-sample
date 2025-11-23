@@ -1,14 +1,4 @@
-[data-krds-mode=high-contrast] :root {
-  --krds-box-shadow-outline: 0 0 0 0.4rem blue;
-  --krds-box-shadow-outline-inset: inset 0 0 0 0.2rem blue;
-}
 
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] :root {
-    --krds-box-shadow-outline: 0 0 0 0.4rem blue;
-    --krds-box-shadow-outline-inset: inset 0 0 0 0.2rem blue;
-  }
-}
 
 @media (max-width: 1023px) {
   :root {
@@ -793,16 +783,6 @@
   mask-image: url(../img/component/icon/ico_checkbox_checked.svg);
 }
 
-[data-krds-mode=high-contrast] .svg-icon.ico-help {
-  background-image: url(../img/component/icon/ico_help_fill.svg);
-}
-
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] .svg-icon.ico-help {
-    background-image: url(../img/component/icon/ico_help_fill.svg);
-  }
-}
-
 /* krds-drop-wrap */
 .krds-drop-wrap {
   --krds-dropdown--menu-radius: var(--krds-radius-medium4);
@@ -935,57 +915,15 @@
   right: 2.4rem;
 }
 
-[data-krds-mode=high-contrast] {
-  /* krds-drop-wrap */
-}
-[data-krds-mode=high-contrast] .krds-drop-wrap {
-  --krds-dropdown--menu-color-border: var(--krds-high-contrast-color-border-gray-light);
-  --krds-dropdown--menu-color-surface: var(--krds-high-contrast-color-surface-white-subtler);
-  --krds-dropdown--menu-color-alpha-shadow: 0 0 0.2rem 0 var(--krds-high-contrast-color-alpha-shadow1), 0 0.4rem 0.8rem 0 var(--krds-high-contrast-color-alpha-shadow2);
-  --krds-dropdown--list-item-color-action-hover: var(--krds-high-contrast-color-action-secondary-hover);
-  --krds-dropdown--list-item-color-action-pressed: var(--krds-high-contrast-color-action-secondary-pressed);
-  --krds-dropdown--list-item-color-action-selected: var(--krds-high-contrast-color-action-secondary-selected);
-  --krds-dropdown--list-item-color-text-selected: var(--krds-high-contrast-color-text-secondary);
-}
-[data-krds-mode=high-contrast] .krds-drop-wrap .drop-list .item-link .ico-go {
-  display: inline-flex;
-  width: var(--krds-icon--size-medium);
-  height: var(--krds-icon--size-medium);
-  background-color: var(--krds-high-contrast-color-text-basic);
-  forced-color-adjust: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] {
-    /* krds-drop-wrap */
-  }
-  [data-krds-mode=theme] .krds-drop-wrap {
-    --krds-dropdown--menu-color-border: var(--krds-high-contrast-color-border-gray-light);
-    --krds-dropdown--menu-color-surface: var(--krds-high-contrast-color-surface-white-subtler);
-    --krds-dropdown--menu-color-alpha-shadow: 0 0 0.2rem 0 var(--krds-high-contrast-color-alpha-shadow1), 0 0.4rem 0.8rem 0 var(--krds-high-contrast-color-alpha-shadow2);
-    --krds-dropdown--list-item-color-action-hover: var(--krds-high-contrast-color-action-secondary-hover);
-    --krds-dropdown--list-item-color-action-pressed: var(--krds-high-contrast-color-action-secondary-pressed);
-    --krds-dropdown--list-item-color-action-selected: var(--krds-high-contrast-color-action-secondary-selected);
-    --krds-dropdown--list-item-color-text-selected: var(--krds-high-contrast-color-text-secondary);
-  }
-  [data-krds-mode=theme] .krds-drop-wrap .drop-list .item-link .ico-go {
-    display: inline-flex;
-    width: var(--krds-icon--size-medium);
-    height: var(--krds-icon--size-medium);
-    background-color: var(--krds-high-contrast-color-text-basic);
-    forced-color-adjust: none;
-  }
-}
-
 /* reset */
 html, body {
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: var(--krds-font-family-base);
-  color: var(--krds-light-color-text-basic);
-  font-weight: var(--krds-font-weight-regular);
-  line-height: var(--krds-line-height-base);
+  font-family: "Pretendard";
+  color: #1e2124;
+  font-weight: 400;
+  line-height: 1.5;
   word-break: keep-all;
   word-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
@@ -993,46 +931,30 @@ html, body {
 }
 
 html {
-  font-size: var(--krds-font-size-base);
+  font-size: 10px;
 }
 
 body {
-  background-color: var(--krds-light-color-background-white);
-  font-size: var(--krds-pc-font-size-body-medium);
+  background-color: #ffffff;
+  font-size: 17px;
   overflow-x: hidden;
 }
 
-[data-krds-mode=high-contrast] html, [data-krds-mode=high-contrast] body {
-  color: var(--krds-high-contrast-color-text-basic);
-}
-[data-krds-mode=high-contrast] body {
-  background-color: var(--krds-high-contrast-color-background-white);
-}
-
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] html, [data-krds-mode=theme] body {
-    color: var(--krds-high-contrast-color-text-basic);
-  }
-  [data-krds-mode=theme] body {
-    background-color: var(--krds-high-contrast-color-background-white);
-  }
-}
-
 *:focus {
-  outline: 0.2rem solid var(--krds-light-color-border-inverse);
+  outline: 0.2rem solid #ffffff;
   outline-offset: 0;
-  box-shadow: var(--krds-box-shadow-outline);
+  box-shadow: 0 0 0 0.4rem #256ef4;
   transition: outline 0s, box-shadow 0s !important;
 }
 
 ::-moz-selection {
-  background: var(--krds-color-light-secondary-50);
-  color: var(--krds-color-light-gray-0);
+  background: #346fb2;
+  color: #ffffff;
 }
 
 ::selection {
-  background: var(--krds-color-light-secondary-50);
-  color: var(--krds-color-light-gray-0);
+  background: #346fb2;
+  color: #ffffff;
 }
 
 body,
@@ -1073,7 +995,7 @@ label,
   box-sizing: border-box;
   -webkit-text-size-adjust: none;
   font-family: inherit;
-  line-height: var(--krds-line-height-base);
+  line-height: 1.5;
   letter-spacing: inherit;
 }
 
@@ -1101,7 +1023,7 @@ h4,
 h5,
 h6,
 strong {
-  font-weight: var(--krds-font-weight-bold);
+  font-weight: 700;
 }
 
 article,
@@ -1149,7 +1071,7 @@ i {
 
 a,
 button {
-  transition: var(--krds-transition-base);
+  transition: 0.4s ease-in-out;
 }
 
 a,
@@ -1162,7 +1084,7 @@ a:focus {
 
 a:visited.visited,
 a:visited .visited {
-  color: var(--krds-light-color-link-visited);
+  color: #5917b8;
 }
 
 button,
@@ -1294,7 +1216,7 @@ caption {
 
 .underline {
   text-decoration: underline;
-  text-underline-offset: var(--krds-font-underline-offset);
+  text-underline-offset: 3px;
 }
 
 .break-all {
@@ -1303,83 +1225,22 @@ caption {
 
 .svg-icon {
   display: inline-flex;
-  width: var(--krds-icon--size-large);
-  height: var(--krds-icon--size-large);
-  background-color: var(--krds-light-color-text-basic);
+  width: 24px;
+  height: 24px;
+  background-color: #1e2124;
   forced-color-adjust: none;
 }
 .svg-icon.pure {
   display: inline-flex;
-  width: var(--krds-icon--size-large);
-  height: var(--krds-icon--size-large);
-  background-color: var(--krds-light-color-text-basic);
+  width: 24px;
+  height: 24px;
+  background-color: #1e2124;
   background-color: transparent !important;
   forced-color-adjust: none;
 }
 
 .inner {
-  max-width: var(--krds-contents-wrap-size);
-  padding-left: var(--krds-contents-padding-x);
-  padding-right: var(--krds-contents-padding-x);
+  max-width: 1248px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
-
-@media (max-width: 767px) {
-  body {
-    font-size: var(--krds-mobile-font-size-body-medium);
-  }
-  .pc-only {
-    display: none !important;
-  }
-  .pc-only.read {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
-  }
-  .mob-line {
-    display: block;
-    line-height: inherit;
-  }
-}
-@media (min-width: 1024px) {
-  .inner {
-    margin: 0 auto;
-  }
-}
-@media (min-width: 768px) {
-  .mob-only {
-    display: none !important;
-  }
-  .mob-only.read {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    padding: 0 !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    clip: rect(0, 0, 0, 0) !important;
-    white-space: nowrap !important;
-    border: 0 !important;
-  }
-  .pc-line {
-    display: block;
-    line-height: inherit;
-  }
-}
-[data-krds-mode=high-contrast] a:visited.visited,
-[data-krds-mode=high-contrast] a:visited .visited {
-  color: var(--krds-high-contrast-color-link-visited);
-}
-
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] a:visited.visited,
-  [data-krds-mode=theme] a:visited .visited {
-    color: var(--krds-high-contrast-color-link-visited);
-  }
-}
-/*# sourceMappingURL=common.css.map */

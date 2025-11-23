@@ -36,9 +36,9 @@
   right: 24px;
   content: "";
   display: inline-flex;
-  width: var(--krds-accordion--button-icon-size);
-  height: var(--krds-accordion--button-icon-size);
-  background-color: var(--krds-light-color-text-basic);
+  width: 24px;
+  height: 24px;
+  background-color: #1e2124;
   forced-color-adjust: none;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
@@ -46,20 +46,20 @@
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  -webkit-mask-image: url(../../img/img/component/icon/ico_angle.svg);
-  mask-image: url(../../img/img/component/icon/ico_angle.svg);
-  background-color: var(--krds-accordion--color-icon);
+  -webkit-mask-image: url(../../img/component/icon/ico_angle.svg);
+  mask-image: url(../../img/component/icon/ico_angle.svg);
+  background-color: #33363d;
   transition: 0.4s ease-in-out;
   transform: rotate(0deg);
 }
 .krds-accordion .accordion-item .btn-accordion.active {
-  background-color: var(--krds-accordion--color-action-open);
+  background-color: #eef2f7;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  color: var(--krds-accordion--button-color-text-open);
+  color: #052b57;
 }
 .krds-accordion .accordion-item .btn-accordion.active:focus {
-  border-radius: var(--krds-accordion--radius);
+  border-radius: 10px;
 }
 .krds-accordion .accordion-item .btn-accordion.active::after {
   transform: rotate(180deg);
@@ -72,9 +72,9 @@
 }
 .krds-accordion .accordion-item .accordion-body {
   padding: 0 24px 24px;
-  background-color: var(--krds-accordion--color-action);
-  border-bottom-left-radius: var(--krds-accordion--radius);
-  border-bottom-right-radius: var(--krds-accordion--radius);
+  background-color: #ffffff00;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .krds-accordion .accordion-item.active .accordion-collapse {
   height: auto;
@@ -83,7 +83,7 @@
   visibility: visible;
 }
 .krds-accordion .accordion-item.active .accordion-body {
-  background-color: var(--krds-accordion--color-action-open);
+  background-color: #eef2f7;
 }
 .krds-accordion.type-line {
   padding: 0;
@@ -112,34 +112,6 @@
 }
 .krds-accordion.type-line .accordion-item.active .accordion-body {
   background: none;
-}
-
-[data-krds-mode=high-contrast] .krds-accordion {
-  --krds-accordion--color-action: var(--krds-high-contrast-color-action-secondary);
-  --krds-accordion--button-color-action: var(--krds-high-contrast-color-action-secondary);
-  --krds-accordion--button-color-action-hover: var(--krds-high-contrast-color-action-secondary-hover);
-  --krds-accordion--button-color-action-pressed: var(--krds-high-contrast-color-action-secondary-pressed);
-  --krds-accordion--color-action-open: var(--krds-high-contrast-color-action-secondary-hover);
-  --krds-accordion--color-divider: var(--krds-high-contrast-color-divider-gray-light);
-  --krds-accordion--color-divider-open: var(--krds-high-contrast-color-divider-gray-dark);
-  --krds-accordion--button-color-text: var(--krds-high-contrast-color-text-basic);
-  --krds-accordion--button-color-text-open: var(--krds-high-contrast-color-text-secondary);
-  --krds-accordion--color-icon: var(--krds-high-contrast-color-icon-gray);
-}
-
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] .krds-accordion {
-    --krds-accordion--color-action: var(--krds-high-contrast-color-action-secondary);
-    --krds-accordion--button-color-action: var(--krds-high-contrast-color-action-secondary);
-    --krds-accordion--button-color-action-hover: var(--krds-high-contrast-color-action-secondary-hover);
-    --krds-accordion--button-color-action-pressed: var(--krds-high-contrast-color-action-secondary-pressed);
-    --krds-accordion--color-action-open: var(--krds-high-contrast-color-action-secondary-hover);
-    --krds-accordion--color-divider: var(--krds-high-contrast-color-divider-gray-light);
-    --krds-accordion--color-divider-open: var(--krds-high-contrast-color-divider-gray-dark);
-    --krds-accordion--button-color-text: var(--krds-high-contrast-color-text-basic);
-    --krds-accordion--button-color-text-open: var(--krds-high-contrast-color-text-secondary);
-    --krds-accordion--color-icon: var(--krds-high-contrast-color-icon-gray);
-  }
 }
 
 @media (max-width: 767px) {
