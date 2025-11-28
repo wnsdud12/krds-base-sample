@@ -7,47 +7,34 @@
   flex-direction: row;
 }
 .krds-badge.outline-primary {
-  border-width: var(--krds-light-border-width-variable-regular);
+  border-width: 1px;
   border-style: solid;
-  border-color: var(--krds-badge--color-primary-element);
-  color: var(--krds-badge--color-primary-text);
+  border-color: blue;
+  color: blue;
 }
 .krds-badge.bg-primary {
-  background-color: var(--krds-badge--color-primary-element);
-  color: var(--krds-badge--color-text-basic);
-}
-.krds-badge.bg-light-primary {
-  background-color: var(--krds-badge--color-primary-element-lighter);
-  color: var(--krds-badge--color-primary-text);
+  background-color: blue;
+  color: white;
 }
 .krds-badge {
-  height: var(--krds-badge--size-height);
-  line-height: var(--krds-badge--line-height);
-  font-size: var(--krds-badge--pc-font-size);
-  font-weight: var(--krds-font-weight-regular);
-  padding: 0 var(--krds-badge--padding);
-  border-radius: var(--krds-badge--radius);
+  height: 24px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 8px;
+  border-radius: 4px;
 }
 .krds-badge.large {
-  height: var(--krds-badge--size-height-large);
-  font-size: var(--krds-badge--pc-font-size-large);
+  height: 32px;
+  font-size: 15px;
 }
 .krds-badge.number {
-  height: var(--krds-badge--number-size-height);
-  border-radius: var(--krds-badge--radius-max);
-}
-.krds-badge.dot {
-  width: var(--krds-badge--dot-size);
-  height: var(--krds-badge--dot-size);
-  padding: var(--krds-badge--dot-padding);
-  border-radius: var(--krds-badge--radius-max);
+  height: 20px;
+  border-radius: 100px;
 }
 
 .krds-badge-wrap {
-  --krds-badge--wrap-gap: var(--krds-gap-3);
   display: flex;
-  gap: var(--krds-badge--wrap-gap);
-}
-.krds-badge-wrap ~ .krds-badge-wrap {
-  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
 }

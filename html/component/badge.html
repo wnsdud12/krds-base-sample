@@ -13,50 +13,38 @@
 </head>
 
 <body>
+  <style>
+    .krds-badge-content {
+      width: 130px;
+    }
+
+    .krds-badge-wrap~.krds-badge-wrap {
+      margin-top: 20px;
+    }
+  </style>
   <div class="container">
     <div class="content">
       <!-- badge -->
-      <h6>default badge</h6>
       <div class="krds-badge-wrap">
-        <span class="krds-badge outline-primary">Label</span>
+        <div class="krds-badge-content">
+          <h6>outline badge</h6><span class="krds-badge outline-primary">Label</span>
+        </div>
+        <div class="krds-badge-content">
+          <h6>filled badge</h6><span class="krds-badge bg-primary">Label</span>
+        </div>
+        <div class="krds-badge-content">
+          <h6>outline large badge</h6><span class="krds-badge large outline-primary">Label</span>
+        </div>
+        <div class="krds-badge-content">
+          <h6>filled large badge</h6><span class="krds-badge large bg-primary">Label</span>
+        </div>
+        <div class="krds-badge-content">
+          <h6>numbering badge</h6><span class="krds-badge bg-primary number">5</span>
+        </div>
+        <div class="krds-badge-content">
+          <h6>numbering badge 999+</h6><span class="krds-badge bg-primary number">999+</span>
+        </div>
       </div>
-
-      <div class="krds-badge-wrap">
-        <span class="krds-badge bg-primary">Label</span>
-      </div>
-
-      <div class="krds-badge-wrap">
-        <span class="krds-badge bg-light-primary">Label</span>
-      </div>
-      <!-- //badge -->
-
-      <!-- badge -->
-      <h6>badge size</h6>
-      <div class="krds-badge-wrap">
-        <span class="krds-badge large outline-primary">Label</span>
-      </div>
-
-      <div class="krds-badge-wrap">
-        <span class="krds-badge medium bg-primary">Label</span>
-      </div>
-
-      <div class="krds-badge-wrap">
-        <span class="krds-badge small bg-light-primary">Label</span>
-      </div>
-      <!-- //badge -->
-
-      <!-- badge -->
-      <h6>numbering badge</h6>
-      <div class="krds-badge-wrap">
-        <span class="krds-badge bg-primary number">5</span>
-        <span class="krds-badge bg-primary number">999+</span>
-      </div>
-
-      <div class="krds-badge-wrap">
-        <span class="krds-badge bg-point number">5</span>
-        <span class="krds-badge bg-point number">999+</span>
-      </div>
-      <!-- //badge -->
     </div>
   </div>
 </body>
