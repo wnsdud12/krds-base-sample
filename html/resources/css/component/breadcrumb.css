@@ -1,0 +1,97 @@
+/* 브레드크럼 */
+.krds-breadcrumb-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 40px;
+  padding-top: 24px;
+}
+.krds-breadcrumb-wrap .breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4px;
+  width: 100%;
+}
+.krds-breadcrumb-wrap .breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 15px;
+}
+.krds-breadcrumb-wrap .breadcrumb li .txt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 4px;
+  padding: 0 4px;
+  background-color: #ffffff00;
+  border-radius: 6px;
+}
+.krds-breadcrumb-wrap .breadcrumb li a.txt {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.krds-breadcrumb-wrap .breadcrumb li a.txt:not(.disabled):hover {
+  background-color: #eef2f7;
+}
+.krds-breadcrumb-wrap .breadcrumb li a.txt:not(.disabled):active {
+  background-color: #d6e0eb;
+}
+.krds-breadcrumb-wrap .breadcrumb li a.txt:not(.disabled):focus, .krds-breadcrumb-wrap .breadcrumb li a.txt:not(:disabled):focus {
+  box-shadow: inset 0 0 0 0.2rem #256ef4;
+  outline-offset: -0.4rem;
+}
+.krds-breadcrumb-wrap .breadcrumb li a.txt.disabled, .krds-breadcrumb-wrap .breadcrumb li a.txt:disabled {
+  cursor: default;
+  color: #8a949e;
+}
+.krds-breadcrumb-wrap .breadcrumb li:not(:last-child)::after {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  content: "";
+  margin-left: 4px;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background-color: #1e2124;
+  forced-color-adjust: none;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-image: url(../../img/component/icon/ico_angle.svg);
+  mask-image: url(../../img/component/icon/ico_angle.svg);
+  transform: rotate(-90deg);
+}
+.krds-breadcrumb-wrap .breadcrumb .home {
+  gap: 0;
+}
+.krds-breadcrumb-wrap .breadcrumb .home .txt::before {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background-color: #1e2124;
+  forced-color-adjust: none;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-image: url(../../img/component/icon/ico_bread_home.svg);
+  mask-image: url(../../img/component/icon/ico_bread_home.svg);
+}
