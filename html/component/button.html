@@ -37,7 +37,7 @@
       </div>
       <div class="content__area">
         <h4 class="content__title">사이즈</h4>
-        <div class="example">
+        <div class="example" id="focus-trap-test">
           <!-- button -->
           <button type="button" class="krds-btn xsmall">x-small 버튼</button>
           <button type="button" class="krds-btn small">small 버튼</button>
@@ -71,6 +71,20 @@
             <i class="svg-icon ico-sch"></i>
             x-large 버튼
           </button>
+          <!-- //button -->
+        </div>
+      </div>
+      <div class="content__area">
+        <h4 class="content__title">텍스트 (비활성화)</h4>
+        <div class="example">
+          <!-- button -->
+          <button type="button" disabled class="krds-btn disabled small text">텍스트 버튼</button>
+          <button type="button" disabled class="krds-btn disabled xsmall text">찜하기 <i class="svg-icon ico-like"></i></button>
+          <button type="button" disabled class="krds-btn disabled small text">주민등록표초본 <i class="svg-icon ico-angle right"></i></button>
+          <button type="button" disabled class="krds-btn disabled medium text">검색 <i class="svg-icon ico-sch"></i></button>
+          <button type="button" disabled class="krds-btn disabled xlarge text">자세히 보기 <i class="svg-icon ico-more"></i></button>
+          <button type="button" disabled class="krds-btn disabled text">파일다운로드 <i class="svg-icon ico-down"></i></button>
+          <button type="button" disabled class="krds-btn disabled text" disabled>필터 <i class="svg-icon ico-filter"></i></button>
           <!-- //button -->
         </div>
       </div>
@@ -119,5 +133,6 @@
     </div>
   </div>
 </body>
+<script src="/html/resources/js/component/button.js"></script>
 
 </html>
