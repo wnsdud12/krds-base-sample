@@ -417,16 +417,16 @@
   background-color: inherit;
 }
 .krds-btn.icon.xsmall {
-  width: var(--krds-button--icon-size-xsmall);
-  height: var(--krds-button--icon-size-xsmall);
+  width: 16px;
+  height: 16px;
 }
 .krds-btn.icon.xsmall .svg-icon {
   width: 100%;
   height: 100%;
 }
 .krds-btn.icon.small {
-  width: var(--krds-button--icon-size-small);
-  height: var(--krds-button--icon-size-small);
+  width: 20px;
+  height: 20px;
 }
 .krds-btn.icon.small .svg-icon {
   width: 100%;
@@ -441,16 +441,16 @@
   height: 100%;
 }
 .krds-btn.icon.large {
-  width: var(--krds-button--icon-size-large);
-  height: var(--krds-button--icon-size-large);
+  width: 32px;
+  height: 32px;
 }
 .krds-btn.icon.large .svg-icon {
   width: 100%;
   height: 100%;
 }
 .krds-btn.icon.xlarge {
-  width: var(--krds-button--icon-size-xlarge);
-  height: var(--krds-button--icon-size-xlarge);
+  width: 40px;
+  height: 40px;
 }
 .krds-btn.icon.xlarge .svg-icon {
   width: 100%;
@@ -463,9 +463,9 @@
   background-color: transparent;
 }
 .krds-btn.icon.border {
-  background-color: var(--krds-light-color-background-white);
-  border: 0.1rem solid var(--krds-light-color-border-gray);
-  border-radius: var(--krds-radius-max);
+  background-color: #ffffff;
+  border: 1px solid #b1b8be;
+  border-radius: 100px;
 }
 .krds-btn.icon.border.large .svg-icon {
   width: 16px;
@@ -476,5 +476,5 @@
   height: 24px;
 }
 .krds-btn.icon.border[disabled], .krds-btn.icon.border.disabled {
-  background-color: var(--krds-light-color-button-disabled-fill);
+  background-color: #cdd1d5;
 }
