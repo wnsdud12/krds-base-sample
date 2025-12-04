@@ -192,31 +192,32 @@
   color: #8a949e;
 }
 .krds-btn.link {
-  background-color: var(--krds-button--color-link-fill);
-  border-color: var(--krds-button--color-link-border);
-  color: var(--krds-button--color-link-text);
+  background-color: #ffffff00;
+  border-color: #00000000;
+  color: #256ef4;
 }
 .krds-btn.link:not(.icon) .svg-icon {
-  background-color: var(--krds-button--color-link-text);
+  background-color: #256ef4;
 }
 .krds-btn.link:hover {
-  background-color: var(--krds-button--color-link-fill-hover);
+  background-color: #ffffff00;
 }
 .krds-btn.link:active, .krds-btn.link:focus {
-  background-color: var(--krds-button--color-link-fill-pressed);
+  background-color: #ffffff00;
 }
-.krds-btn.link[disabled], .krds-btn.link.disabled {
-  background-color: var(--krds-button--color-link-fill-disabled);
-  border-color: var(--krds-button--color-link-border-disabled);
-  color: var(--krds-button--color-link-text-disabled);
+.krds-btn.link[disabled], .krds-btn.link.disabled,
+.krds-btn.link.pure[disabled], .krds-btn.link.pure.disabled {
+  background-color: #ffffff00;
+  border-color: #00000000;
+  color: #8a949e;
 }
 .krds-btn.link[disabled]:not(.icon) .svg-icon, .krds-btn.link.disabled:not(.icon) .svg-icon {
-  background-color: var(--krds-button--color-link-text-disabled);
+  background-color: #8a949e;
 }
 .krds-btn.link[disabled]:hover, .krds-btn.link.disabled:hover {
-  background-color: var(--krds-button--color-link-fill-disabled);
-  border-color: var(--krds-button--color-link-border-disabled);
-  color: var(--krds-button--color-link-text-disabled);
+  background-color: #ffffff00;
+  border-color: #00000000;
+  color: #8a949e;
 }
 .krds-btn {
   display: inline-flex;
@@ -298,21 +299,6 @@
   margin-bottom: -0.5rem;
 }
 .krds-btn.link {
-  --krds-button--pc-font-size-xsmall: var(--krds-pc-font-size-label-small);
-  --krds-button--mobile-font-size-xsmall: var(--krds-mobile-font-size-label-small);
-  --krds-button--padding-x-xsmall: var(--krds-padding-1);
-  --krds-button--pc-font-size-small: var(--krds-pc-font-size-label-small);
-  --krds-button--mobile-font-size-small: var(--krds-mobile-font-size-label-small);
-  --krds-button--padding-x-small: var(--krds-padding-1);
-  --krds-button--pc-font-size-medium: var(--krds-pc-font-size-label-medium);
-  --krds-button--mobile-font-size-medium: var(--krds-mobile-font-size-label-medium);
-  --krds-button--padding-x-medium: var(--krds-padding-1);
-  --krds-button--pc-font-size-large: var(--krds-pc-font-size-label-large);
-  --krds-button--mobile-font-size-large: var(--krds-mobile-font-size-label-large);
-  --krds-button--padding-x-large: var(--krds-padding-1);
-  --krds-button--pc-font-size-xlarge: var(--krds-pc-font-size-label-large);
-  --krds-button--mobile-font-size-xlarge: var(--krds-mobile-font-size-label-large);
-  --krds-button--padding-x-xlarge: var(--krds-padding-1);
   display: inline-block;
   height: auto !important;
   padding: 0 20px;
@@ -369,29 +355,29 @@
   background-color: #1e2124;
 }
 .krds-btn.link:hover {
-  color: var(--krds-light-color-link-hover);
+  color: #0b50d0;
 }
 .krds-btn.link:hover .svg-icon {
-  background-color: var(--krds-light-color-link-hover);
+  background-color: #0b50d0;
 }
 .krds-btn.link:active, .krds-btn.link:focus {
-  color: var(--krds-light-color-link-pressed);
+  color: #083891;
 }
 .krds-btn.link:active .svg-icon, .krds-btn.link:focus .svg-icon {
-  background-color: var(--krds-light-color-link-pressed);
+  background-color: #083891;
 }
 .krds-btn.link:visited {
-  color: var(--krds-light-color-link-visited);
+  color: #5917b8;
   text-decoration: none;
 }
 .krds-btn.link:visited .svg-icon {
-  background-color: var(--krds-light-color-link-visited);
+  background-color: #5917b8;
 }
 .krds-btn.link.pure:hover, .krds-btn.link.pure:active, .krds-btn.link.pure:focus, .krds-btn.link.pure:visited {
-  color: var(--krds-button--color-link-text);
+  color: #256ef4;
 }
 .krds-btn.link.pure:hover .svg-icon, .krds-btn.link.pure:active .svg-icon, .krds-btn.link.pure:focus .svg-icon, .krds-btn.link.pure:visited .svg-icon {
-  background-color: var(--krds-button--color-link-text);
+  background-color: #256ef4;
 }
 .krds-btn.link .underline.hidden-underline {
   text-decoration-color: #00000000;
