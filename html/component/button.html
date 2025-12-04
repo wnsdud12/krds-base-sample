@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/html/resources/css/reset.css">
+  <link rel="stylesheet" href="/html/resources/css/base.css">
+  <link rel="stylesheet" href="/html/resources/css/component/button.css">
+  <!-- <Link rel="stylesheet" href="/base/krds-uiux-1.0.6/resources/css/common/common.css"> -->
+  <!-- <Link rel="stylesheet" href="/base/krds-uiux-1.0.6/resources/css/component/component.css"> -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="content__area">
+        <h4 class="content__title">계층</h4>
+        <div class="example">
+          <!-- button -->
+          <button type="button" class="krds-btn primary">버튼 : primary</button>
+          <button type="button" class="krds-btn secondary">버튼 : secondary</button>
+          <button type="button" class="krds-btn tertiary">버튼 : tertiary</button>
+          <!-- //button -->
+        </div>
+      </div>
+      <div class="content__area">
+        <h4 class="content__title">계층 (비활성화)</h4>
+        <div class="example">
+          <!-- button -->
+          <button type="button" class="krds-btn primary disabled" disabled>버튼 : primary</button>
+          <button type="button" class="krds-btn secondary disabled" disabled>버튼 : secondary</button>
+          <button type="button" class="krds-btn tertiary disabled" disabled>버튼 : tertiary</button>
+          <!-- //button -->
+        </div>
+      </div>
+      <div class="content__area">
+        <h4 class="content__title">사이즈</h4>
+        <div class="example" id="focus-trap-test">
+          <!-- button -->
+          <button type="button" class="krds-btn xsmall">x-small 버튼</button>
+          <button type="button" class="krds-btn small">small 버튼</button>
+          <button type="button" class="krds-btn medium">medium 버튼</button>
+          <button type="button" class="krds-btn large">large 버튼</button>
+          <button type="button" class="krds-btn xlarge">x-large 버튼</button>
+          <!-- //button -->
+        </div>
+      </div>
+      <div class="content__area">
+        <h4 class="content__title">아이콘 버튼</h4>
+        <div class="example">
+          <!-- button -->
+          <button type="button" class="krds-btn xsmall">
+            x-small 버튼
+            <i class="svg-icon ico-sch"></i>
+          </button>
+          <button type="button" class="krds-btn small">
+            small 버튼
+            <i class="svg-icon ico-sch"></i>
+          </button>
+          <button type="button" class="krds-btn medium">
+            medium 버튼
+            <i class="svg-icon ico-sch"></i>
+          </button>
+          <button type="button" class="krds-btn large">
+            large 버튼
+            <i class="svg-icon ico-sch"></i>
+          </button>
+          <button type="button" class="krds-btn xlarge">
+            <i class="svg-icon ico-sch"></i>
+            x-large 버튼
+          </button>
+          <!-- //button -->
+        </div>
+      </div>
+      <div class="content__area">
+        <h4 class="content__title">텍스트 (비활성화)</h4>
+        <div class="example">
+          <!-- button -->
+          <button type="button" disabled class="krds-btn disabled small text">텍스트 버튼</button>
+          <button type="button" disabled class="krds-btn disabled xsmall text">찜하기 <i class="svg-icon ico-like"></i></button>
+          <button type="button" disabled class="krds-btn disabled small text">주민등록표초본 <i class="svg-icon ico-angle right"></i></button>
+          <button type="button" disabled class="krds-btn disabled medium text">검색 <i class="svg-icon ico-sch"></i></button>
+          <button type="button" disabled class="krds-btn disabled xlarge text">자세히 보기 <i class="svg-icon ico-more"></i></button>
+          <button type="button" disabled class="krds-btn disabled text">파일다운로드 <i class="svg-icon ico-down"></i></button>
+          <button type="button" disabled class="krds-btn disabled text" disabled>필터 <i class="svg-icon ico-filter"></i></button>
+          <!-- //button -->
+        </div>
+      </div>
+      <div class="content__area">
+        <h4 class="content__title">텍스트</h4>
+        <div class="example">
+          <!-- button -->
+          <button type="button" class="krds-btn small text">텍스트 버튼</button>
+          <button type="button" class="krds-btn xsmall text">찜하기 <i class="svg-icon ico-like"></i></button>
+          <button type="button" class="krds-btn small text">주민등록표초본 <i class="svg-icon ico-angle right"></i></button>
+          <button type="button" class="krds-btn medium text">검색 <i class="svg-icon ico-sch"></i></button>
+          <button type="button" class="krds-btn xlarge text">자세히 보기 <i class="svg-icon ico-more"></i></button>
+          <button type="button" class="krds-btn text">파일다운로드 <i class="svg-icon ico-down"></i></button>
+          <button type="button" class="krds-btn text">필터 <i class="svg-icon ico-filter"></i></button>
+          <!-- //button -->
+        </div>
+      </div>
+      <div class="content__area">
+        <h4 class="content__title">아이콘만</h4>
+        <div class="example">
+          <!-- button -->
+          <button type="button" class="krds-btn icon">
+            <span class="sr-only">검색</span>
+            <i class="svg-icon ico-sch"></i>
+          </button>
+          <button type="button" class="krds-btn icon medium">
+            <span class="sr-only">입력한 비밀번호 보기</span>
+            <i class="svg-icon ico-pw-visible"></i>
+          </button>
+          <button class="krds-btn icon medium btn-help-exec">
+            <span class="sr-only">도움말</span>
+            <i class="svg-icon ico-help"></i>
+          </button>
+
+          <button type="button" class="krds-btn large icon border">
+            <span class="sr-only">새로고침</span>
+            <i class="svg-icon ico-refresh"></i>
+          </button>
+          <button type="button" class="krds-btn large icon border" disabled>
+            <span class="sr-only">열기</span>
+            <i class="svg-icon ico-angle down"></i>
+          </button>
+          <!-- //button -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="/html/resources/js/component/button.js"></script>
+
+</html>
