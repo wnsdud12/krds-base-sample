@@ -291,7 +291,7 @@
 }
 .krds-btn.text.h-auto {
   height: auto;
-  padding: var(--krds-padding-1) !important;
+  padding: 2px !important;
 }
 .krds-btn.text .svg-icon {
   display: inline-block;
