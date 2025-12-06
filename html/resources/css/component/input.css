@@ -1,0 +1,130 @@
+@import url("./button.css");
+@import url("./form.css");
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+}
+.input-group.range {
+  align-items: flex-end;
+  position: relative;
+}
+.input-group.range > li:not(.mark) {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex: 1 1 0px;
+  min-width: 0;
+  gap: 8px;
+  position: relative;
+}
+.input-group.range > li.mark {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 56px;
+}
+.input-group.range > li.mark.large {
+  height: 56px;
+}
+.input-group.range > li.mark.medium {
+  height: 48px;
+}
+.input-group.range > li.mark.small {
+  height: 40px;
+}
+
+.row .input-group {
+  flex-direction: column;
+}
+.row .input-group.range > li {
+  width: 100%;
+}
+
+/* 입력 필드 / 텍스트 영역 */
+.krds-input {
+  height: 56px;
+  border-radius: 8px;
+  font-size: 19px;
+}
+.krds-input.small {
+  height: 40px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.krds-input.medium {
+  height: 48px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+.krds-input.large {
+  height: 56px;
+  border-radius: 8px;
+  font-size: 19px;
+}
+.krds-input.xlarge {
+  height: 80px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.krds-input {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  border-width: 1px;
+  background-color: #ffffff;
+  border: 1px solid #58616a;
+  font-family: inherit;
+  color: #464c53;
+  transition: 0.4s ease-in-out;
+}
+.krds-input:focus, .krds-input.focus {
+  border-color: #256ef4;
+  border-width: 2px;
+  outline: none;
+  box-shadow: none;
+}
+.krds-input[readonly] {
+  background-color: #cdd1d5;
+  border-color: #b1b8be;
+  color: #464c53;
+}
+.krds-input[readonly].datepicker {
+  background-color: #ffffff;
+  border-color: #58616a;
+  color: #464c53;
+}
+.krds-input[readonly]:focus {
+  border-color: #256ef4;
+}
+.krds-input[disabled] {
+  background-color: #cdd1d5;
+  border-color: #b1b8be;
+  color: #6d7882;
+}
+.krds-input::-webkit-input-placeholder {
+  color: #8a949e;
+}
+.krds-input::-moz-placeholder {
+  color: #8a949e;
+}
+.krds-input:-ms-input-placeholder {
+  color: #8a949e;
+}
+.krds-input::-ms-input-placeholder {
+  color: #8a949e;
+}
+.krds-input:not(textarea):placeholder-shown {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
