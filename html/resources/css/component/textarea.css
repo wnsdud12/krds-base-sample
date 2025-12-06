@@ -1,0 +1,64 @@
+@import url("./input.css");
+
+textarea.krds-input {
+  height: 144px;
+  padding: 8px 16px;
+  line-height: 0.4s ease-in-out;
+}
+
+.is-error .krds-input {
+  background-color: #ffffff;
+  border-color: #de3412;
+  border-width: 2px;
+  color: #464c53;
+}
+.is-error .krds-input:focus {
+  border-color: #256ef4;
+}
+
+.textarea-wrap {
+  display: flex;
+  align-items: normal;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.textarea-count {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 2px;
+  width: 100%;
+  font-size: 15px;
+  color: #464c53;
+}
+.textarea-count .count-now {
+  color: #0b50d0;
+}
+
+.is-error .textarea-count .count-now {
+  color: #bd2c0f;
+}
+
+.textarea-bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+}
+.textarea-bottom .textarea-count {
+  margin-left: auto;
+  flex-basis: content;
+  order: 2;
+}
+.textarea-bottom .form-hint-invalid {
+  align-items: flex-start;
+  order: 1;
+}
+.textarea-bottom .form-hint-invalid::before {
+  flex: none;
+}
