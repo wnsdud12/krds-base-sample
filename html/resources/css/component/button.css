@@ -261,34 +261,34 @@
 }
 .krds-btn.text.xsmall {
   min-height: 32px;
-  padding: 0 10px;
+  padding: 0 2px;
 }
 .krds-btn.text.xsmall .svg-icon {
-  margin-bottom: -0.3rem;
+  margin-bottom: -3px;
 }
 .krds-btn.text.small {
   padding: 0 2px;
 }
 .krds-btn.text.small .svg-icon {
-  margin-bottom: -0.3rem;
+  margin-bottom: -3px;
 }
 .krds-btn.text.medium {
   padding: 2px 2px;
 }
 .krds-btn.text.medium .svg-icon {
-  margin-bottom: -0.4rem;
+  margin-bottom: -4px;
 }
 .krds-btn.text.large {
-  padding: 0 20px;
+  padding: 5px 2px;
 }
 .krds-btn.text.large .svg-icon {
-  margin-bottom: -0.5rem;
+  margin-bottom: -5px;
 }
 .krds-btn.text.xlarge {
-  padding: 0 24px;
+  padding: 9px 2px;
 }
 .krds-btn.text.xlarge .svg-icon {
-  margin-bottom: -0.6rem;
+  margin-bottom: -6px;
 }
 .krds-btn.text.h-auto {
   height: auto;
@@ -296,7 +296,7 @@
 }
 .krds-btn.text .svg-icon {
   display: inline-block;
-  margin-bottom: -0.5rem;
+  margin-bottom: -5px;
 }
 .krds-btn.link {
   display: inline-block;
@@ -311,28 +311,28 @@
   font-size: 15px;
 }
 .krds-btn.link.xsmall .svg-icon {
-  margin-bottom: -0.3rem;
+  margin-bottom: -3px;
 }
 .krds-btn.link.small {
   padding: 0 12px;
   font-size: 15px;
 }
 .krds-btn.link.small .svg-icon {
-  margin-bottom: -0.3rem;
+  margin-bottom: -3px;
 }
 .krds-btn.link.medium {
   padding: 0 16px;
   font-size: 17px;
 }
 .krds-btn.link.medium .svg-icon {
-  margin-bottom: -0.4rem;
+  margin-bottom: -4px;
 }
 .krds-btn.link.large {
   padding: 0 20px;
   font-size: 19px;
 }
 .krds-btn.link.large .svg-icon {
-  margin-bottom: -0.5rem;
+  margin-bottom: -5px;
 }
 .krds-btn.link.xlarge {
   padding: 0 24px;
@@ -340,7 +340,7 @@
 }
 
 .krds-btn.link.xlarge .svg-icon {
-  margin-bottom: -0.6rem;
+  margin-bottom: -6px;
 }
 .krds-btn.link.basic {
   color: #1e2124;
@@ -388,7 +388,7 @@
 }
 .krds-btn.link .svg-icon {
   display: inline-block;
-  margin-bottom: -0.5rem;
+  margin-bottom: -5px;
 }
 .krds-btn.icon {
   width: 24px;

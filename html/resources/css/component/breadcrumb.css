@@ -43,8 +43,8 @@
   background-color: #d6e0eb;
 }
 .krds-breadcrumb-wrap .breadcrumb li a.txt:not(.disabled):focus, .krds-breadcrumb-wrap .breadcrumb li a.txt:not(:disabled):focus {
-  box-shadow: inset 0 0 0 0.2rem #256ef4;
-  outline-offset: -0.4rem;
+  box-shadow: inset 0 0 0 2px #256ef4;
+  outline-offset: -4px;
 }
 .krds-breadcrumb-wrap .breadcrumb li a.txt.disabled, .krds-breadcrumb-wrap .breadcrumb li a.txt:disabled {
   cursor: default;

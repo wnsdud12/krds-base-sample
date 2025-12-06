@@ -37,7 +37,7 @@
   width: 100%;
 }
 .form-group .form-conts.keyword-sch {
-  width: 58.8rem;
+  width: 588px;
 }
 .form-group .form-conts .form-label {
   display: flex;
@@ -185,5 +185,5 @@
 
 .krds-form-checks-inline {
   display: flex;
-  gap: 1.2rem;
+  gap: 12px;
 }

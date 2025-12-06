@@ -1,8 +1,8 @@
 /* 아코디언 */
 .krds-accordion {
   padding: 4px 0;
-  border-top: 0.1rem solid #cdd1d5;
-  border-bottom: 0.1rem solid #cdd1d5;
+  border-top: 1px solid #cdd1d5;
+  border-bottom: 1px solid #cdd1d5;
 }
 .krds-accordion .accordion-item {
   padding: 4px 0;
@@ -86,7 +86,7 @@
   border-top: none;
 }
 .krds-accordion.type-line .accordion-item {
-  border-top: 0.1rem solid #cdd1d5;
+  border-top: 1px solid #cdd1d5;
   border-radius: 0;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion {

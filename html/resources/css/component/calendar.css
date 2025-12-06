@@ -34,9 +34,9 @@
 }
 .krds-calendar-area .calendar-wrap {
   position: absolute;
-  top: 0.8rem;
+  top: 8px;
   left: 0;
-  width: 38.4rem;
+  width: 384px;
   background-color: #eef2f7;
   border: 1px solid #d6e0eb;
   border-radius: 12px;
@@ -44,7 +44,7 @@
 }
 .krds-calendar-area .calendar-wrap.bottom {
   top: auto;
-  bottom: 6.4rem;
+  bottom: 64px;
 }
 .krds-calendar-area .calendar-wrap .calendar-head {
   display: flex;
@@ -151,7 +151,7 @@
   transform: translateX(-50%);
   overflow-x: hidden;
   overflow-y: auto;
-  min-width: 14rem;
+  min-width: 140px;
   max-height: 256px;
   border: 1px solid #cdd1d5;
   background-color: #ffffff;
@@ -214,7 +214,7 @@
   margin: 0 !important;
   clip: auto !important;
   text-align: left;
-  top: 4.6rem;
+  top: 46px;
   left: 16px;
   color: #464c53;
   font-weight: 700;
@@ -225,7 +225,7 @@
   width: 14.2857142857%;
 }
 .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl th {
-  padding-bottom: 4.6rem;
+  padding-bottom: 46px;
   font-weight: 400;
   font-size: 15px;
 }
@@ -271,8 +271,8 @@
 }
 .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.today .btn-set-date span::before {
   content: "";
-  width: 0.4rem;
-  height: 0.4rem;
+  width: 4px;
+  height: 4px;
   position: absolute;
   bottom: -10%;
   left: 50%;
@@ -286,7 +286,7 @@
 .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.day-event .btn-set-date span {
   position: relative;
   text-decoration: underline;
-  text-underline-offset: 0.2rem;
+  text-underline-offset: 2px;
 }
 .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.day-event .btn-set-date span::before {
   position: absolute;
@@ -294,7 +294,7 @@
   left: 50%;
   transform: translateX(-50%);
   content: "이벤트";
-  font-size: 1rem;
+  font-size: 10px;
   font-weight: 700;
 }
 .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.day-off {
