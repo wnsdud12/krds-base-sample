@@ -5,13 +5,12 @@
 
 /* 날짜선택 */
 .calendar-input {
-  --krds-input--color-surface: var(--krds-light-color-input-surface);
   position: relative;
   z-index: 1;
   width: 100%;
 }
 .calendar-input .krds-input {
-  padding-right: var(--krds-form-group--icon-padding-right);
+  padding-right: 64px;
   background-image: none;
 }
 .calendar-input .krds-btn {
@@ -24,51 +23,9 @@
   display: none;
 }
 
-[data-krds-mode=high-contrast] .calendar-input {
-  --krds-input--color-surface: var(--krds-high-contrast-color-input-surface);
-}
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] .calendar-input {
-    --krds-input--color-surface: var(--krds-high-contrast-color-input-surface);
-  }
-}
 
 /* 달력 */
 .krds-calendar-area {
-  --krds-calendar--radius: var(--krds-radius-xlarge2);
-  --krds-calendar--head-pc-font-size: var(--krds-pc-font-size-heading-xsmall);
-  --krds-calendar--head-mobile-font-size: var(--krds-mobile-font-size-heading-xsmall);
-  --krds-calendar--head-btn-cal-switch-pc-font-size: var(--krds-pc-font-size-label-medium);
-  --krds-calendar--head-btn-cal-switch-mobile-font-size: var(--krds-mobile-font-size-label-medium);
-  --krds-calendar--head-btn-cal-switch-radius: var(--krds-radius-medium1);
-  --krds-calendar--head-btn-cal-move-size: var(--krds-size-height-5);
-  --krds-calendar--table-wrap-padding: var(--krds-gap-5);
-  --krds-calendar--table-head-pc-font-size: var(--krds-pc-font-size-label-small);
-  --krds-calendar--table-head-mobile-font-size: var(--krds-mobile-font-size-label-small);
-  --krds-calendar--table-caption-pc-font-size: var(--krds-pc-font-size-heading-xxsmall);
-  --krds-calendar--table-caption-mobile-font-size: var(--krds-pc-font-size-heading-xxsmall);
-  --krds-calendar--set-date-radius: var(--krds-radius-max);
-  --krds-calendar--color-border: var(--krds-light-color-border-secondary-light);
-  --krds-calendar--color-surface: var(--krds-light-color-surface-secondary-subtler);
-  --krds-calendar--color-text-sub: var(--krds-light-color-text-subtle);
-  --krds-calendar--head-btn-cal-move-color-text-active: var(--krds-light-color-text-secondary);
-  --krds-calendar--head-btn-cal-move-color-border: var(--krds-light-color-border-gray-light);
-  --krds-calendar--head-btn-cal-move-color-border-active: var(--krds-light-color-border-secondary);
-  --krds-calendar--head-btn-cal-move-color-action: var(--krds-light-color-action-white);
-  --krds-calendar--head-btn-cal-switch-color-action-hover: var(--krds-light-color-action-secondary-hover);
-  --krds-calendar--head-btn-cal-switch-color-action-active: var(--krds-light-color-action-secondary-pressed);
-  --krds-calendar--head-btn-cal-switch-color-text-disabled: var(--krds-light-color-text-disabled-on);
-  --krds-calendar--head-drop-down-shadow: 0 0 0.2rem 0 var(--krds-light-color-alpha-shadow1), 0 0.4rem 0.8rem 0 var(--krds-light-color-alpha-shadow2);
-  --krds-calendar--date-set-color-action: var(--krds-light-color-action-secondary-active);
-  --krds-calendar--date-set-color-text: var(--krds-light-color-text-inverse-static);
-  --krds-calendar--date-set-color-text-day-off: var(--krds-light-color-text-danger);
-  --krds-calendar--date-set-color-text-day-event: var(--krds-light-color-text-information);
-  --krds-calendar--date-set-color-text-disabled: var(--krds-light-color-text-disabled);
-  --krds-calendar--date-set-color-action-pressed: var(--krds-light-color-action-secondary-on-pressed);
-  --krds-calendar--date-set-color-action-period: var(--krds-light-color-action-secondary-on-selected);
-  --krds-calendar--date-set-color-element-today: var(--krds-light-color-element-point);
-  --krds-calendar--action-btn-wrap-color-border: var(--krds-light-color-divider-gray-light);
-  --krds-calendar--action-btn-wrap-color-surface: var(--krds-light-color-surface-white);
   display: none;
   position: relative;
   z-index: 1000;
@@ -418,101 +375,4 @@
 }
 .krds-calendar-area.active {
   display: block;
-}
-
-[data-krds-mode=high-contrast] .krds-calendar-area {
-  --krds-calendar--color-border: var(--krds-high-contrast-color-border-secondary-light);
-  --krds-calendar--color-surface: var(--krds-high-contrast-color-surface-secondary-subtler);
-  --krds-calendar--color-text-sub: var(--krds-high-contrast-color-text-subtle);
-  --krds-calendar--head-btn-cal-move-color-text-active: var(--krds-high-contrast-color-text-secondary);
-  --krds-calendar--head-btn-cal-move-color-border: var(--krds-high-contrast-color-border-gray-light);
-  --krds-calendar--head-btn-cal-move-color-border-active: var(--krds-high-contrast-color-border-secondary);
-  --krds-calendar--head-btn-cal-move-color-action: var(--krds-high-contrast-color-action-white);
-  --krds-calendar--head-btn-cal-switch-color-action-hover: var(--krds-high-contrast-color-action-secondary-hover);
-  --krds-calendar--head-btn-cal-switch-color-action-active: var(--krds-high-contrast-color-action-secondary-pressed);
-  --krds-calendar--head-btn-cal-switch-color-text-disabled: var(--krds-high-contrast-color-text-disabled-on);
-  --krds-calendar--head-drop-down-shadow: 0 0 0.2rem 0 var(--krds-high-contrast-color-alpha-shadow1), 0 0.4rem 0.8rem 0 var(--krds-high-contrast-color-alpha-shadow2);
-  --krds-calendar--date-set-color-action: var(--krds-high-contrast-color-action-secondary-active);
-  --krds-calendar--date-set-color-text: var(--krds-high-contrast-color-text-inverse-static);
-  --krds-calendar--date-set-color-text-day-off: var(--krds-high-contrast-color-text-danger);
-  --krds-calendar--date-set-color-text-day-event: var(--krds-high-contrast-color-text-information);
-  --krds-calendar--date-set-color-text-disabled: var(--krds-high-contrast-color-text-disabled);
-  --krds-calendar--date-set-color-action-pressed: var(--krds-high-contrast-color-action-secondary-on-pressed);
-  --krds-calendar--date-set-color-action-period: var(--krds-high-contrast-color-action-secondary-on-selected);
-  --krds-calendar--date-set-color-element-today: var(--krds-high-contrast-color-element-point);
-  --krds-calendar--action-btn-wrap-color-border: var(--krds-high-contrast-color-divider-gray-light);
-  --krds-calendar--action-btn-wrap-color-surface: var(--krds-high-contrast-color-surface-white);
-}
-[data-krds-mode=high-contrast] .krds-calendar-area .calendar-wrap .calendar-head .btn-cal-move::before {
-  display: inline-flex;
-  width: var(--krds-size-height-3);
-  height: var(--krds-size-height-3);
-  background-color: var(--krds-high-contrast-color-text-basic);
-  forced-color-adjust: none;
-}
-[data-krds-mode=high-contrast] .krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch::after {
-  display: inline-flex;
-  width: var(--krds-icon--size-small);
-  height: var(--krds-icon--size-small);
-  background-color: var(--krds-high-contrast-color-text-basic);
-  forced-color-adjust: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  [data-krds-mode=theme] .krds-calendar-area {
-    --krds-calendar--color-border: var(--krds-high-contrast-color-border-secondary-light);
-    --krds-calendar--color-surface: var(--krds-high-contrast-color-surface-secondary-subtler);
-    --krds-calendar--color-text-sub: var(--krds-high-contrast-color-text-subtle);
-    --krds-calendar--head-btn-cal-move-color-text-active: var(--krds-high-contrast-color-text-secondary);
-    --krds-calendar--head-btn-cal-move-color-border: var(--krds-high-contrast-color-border-gray-light);
-    --krds-calendar--head-btn-cal-move-color-border-active: var(--krds-high-contrast-color-border-secondary);
-    --krds-calendar--head-btn-cal-move-color-action: var(--krds-high-contrast-color-action-white);
-    --krds-calendar--head-btn-cal-switch-color-action-hover: var(--krds-high-contrast-color-action-secondary-hover);
-    --krds-calendar--head-btn-cal-switch-color-action-active: var(--krds-high-contrast-color-action-secondary-pressed);
-    --krds-calendar--head-btn-cal-switch-color-text-disabled: var(--krds-high-contrast-color-text-disabled-on);
-    --krds-calendar--head-drop-down-shadow: 0 0 0.2rem 0 var(--krds-high-contrast-color-alpha-shadow1), 0 0.4rem 0.8rem 0 var(--krds-high-contrast-color-alpha-shadow2);
-    --krds-calendar--date-set-color-action: var(--krds-high-contrast-color-action-secondary-active);
-    --krds-calendar--date-set-color-text: var(--krds-high-contrast-color-text-inverse-static);
-    --krds-calendar--date-set-color-text-day-off: var(--krds-high-contrast-color-text-danger);
-    --krds-calendar--date-set-color-text-day-event: var(--krds-high-contrast-color-text-information);
-    --krds-calendar--date-set-color-text-disabled: var(--krds-high-contrast-color-text-disabled);
-    --krds-calendar--date-set-color-action-pressed: var(--krds-high-contrast-color-action-secondary-on-pressed);
-    --krds-calendar--date-set-color-action-period: var(--krds-high-contrast-color-action-secondary-on-selected);
-    --krds-calendar--date-set-color-element-today: var(--krds-high-contrast-color-element-point);
-    --krds-calendar--action-btn-wrap-color-border: var(--krds-high-contrast-color-divider-gray-light);
-    --krds-calendar--action-btn-wrap-color-surface: var(--krds-high-contrast-color-surface-white);
-  }
-  [data-krds-mode=theme] .krds-calendar-area .calendar-wrap .calendar-head .btn-cal-move::before {
-    display: inline-flex;
-    width: var(--krds-size-height-3);
-    height: var(--krds-size-height-3);
-    background-color: var(--krds-high-contrast-color-text-basic);
-    forced-color-adjust: none;
-  }
-  [data-krds-mode=theme] .krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch::after {
-    display: inline-flex;
-    width: var(--krds-icon--size-small);
-    height: var(--krds-icon--size-small);
-    background-color: var(--krds-high-contrast-color-text-basic);
-    forced-color-adjust: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .calendar-select::-webkit-scrollbar {
-    width: 0.8rem;
-  }
-  .calendar-select::-webkit-scrollbar-thumb {
-    background-color: var(--krds-light-color-element-secondary-light);
-    border-radius: 0.8rem;
-  }
-  .calendar-select::-webkit-scrollbar-track {
-    background-color: var(--krds-light-color-element-secondary-lighter);
-  }
-}
-@media (max-width: 440px) {
-  .krds-calendar-area .calendar-wrap {
-    left: calc(50% - (100vw - var(--krds-contents-padding-x) * 2) / 2);
-    width: calc(100vw - var(--krds-contents-padding-x) * 2);
-  }
 }
