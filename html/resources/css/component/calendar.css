@@ -1,0 +1,376 @@
+@import url("./input.css");
+
+.form-group .form-conts.calendar-conts {
+  gap: 0;
+}
+
+/* 날짜선택 */
+.calendar-input {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.calendar-input .krds-input {
+  padding-right: 64px;
+  background-image: none;
+}
+.calendar-input .krds-btn {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.calendar-input .range::after {
+  display: none;
+}
+
+
+/* 달력 */
+.krds-calendar-area {
+  display: none;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+}
+.krds-calendar-area .calendar-wrap {
+  position: absolute;
+  top: 0.8rem;
+  left: 0;
+  width: 38.4rem;
+  background-color: #eef2f7;
+  border: 1px solid #d6e0eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.krds-calendar-area .calendar-wrap.bottom {
+  top: auto;
+  bottom: 6.4rem;
+}
+.krds-calendar-area .calendar-wrap .calendar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 24px;
+  font-size: 17px;
+  font-weight: 700;
+  gap: 16px;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .btn-cal-move {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border: 1px solid #cdd1d5;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .btn-cal-move::before {
+  content: "";
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background-color: #1e2124;
+  forced-color-adjust: none;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-image: url(../../img/component/icon/ico_angle.svg);
+  mask-image: url(../../img/component/icon/ico_angle.svg);
+  transform: rotate(90deg);
+}
+.krds-calendar-area .calendar-wrap .calendar-head .btn-cal-move.next::before {
+  transform: rotate(-90deg);
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0 8px;
+  transition: 0.4s ease-in-out;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch::after {
+  content: "";
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  background-color: #1e2124;
+  forced-color-adjust: none;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  -webkit-mask-image: url(../../img/component/icon/ico_arrow_dropdown.svg);
+  mask-image: url(../../img/component/icon/ico_arrow_dropdown.svg);
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch:hover {
+  background-color: #eef2f7;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch:focus, .krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch:active, .krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch.active {
+  background-color: #d6e0eb;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch:disabled {
+  cursor: default;
+  color: #6d7882;
+  background-color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .btn-cal-switch:disabled::after {
+  background-color: #6d7882;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down {
+  --krds-calendar-drop-down-btn-height: 40px;
+  position: relative;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select {
+  visibility: hidden;
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 14rem;
+  max-height: 256px;
+  border: 1px solid #cdd1d5;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 8px;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 0 2px 0 #0000000d, 0 4px 8px 0 #00000014;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select.active {
+  visibility: visible;
+  z-index: auto;
+  opacity: 1;
+  z-index: 10;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel li {
+  width: 100%;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel button:hover {
+  background-color: #eef2f7;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel button:focus, .krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel button:active {
+  background-color: #d6e0eb;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel button.active {
+  color: #052b57;
+  border: 1px solid #063a74;
+  background-color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap .calendar-head .calendar-switch-wrap .calendar-drop-down .calendar-select .sel button:disabled {
+  cursor: default;
+  color: #6d7882;
+  background-color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap .calendar-body {
+  position: relative;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap {
+  padding: 0 16px;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl caption {
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  clip: auto !important;
+  text-align: left;
+  top: 4.6rem;
+  left: 16px;
+  color: #464c53;
+  font-weight: 700;
+  font-size: 15px;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl th,
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td {
+  width: 14.2857142857%;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl th {
+  padding-bottom: 4.6rem;
+  font-weight: 400;
+  font-size: 15px;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td {
+  padding: 2px 0;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin-inline: auto;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td > button span {
+  z-index: 1;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td > button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  transition: 0.4s ease-in-out;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td .btn-set-date:focus {
+  z-index: 1;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td:not(.period, .old, .new, .disabled) .btn-set-date:hover::after {
+  background-color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td:not(.period, .old, .new, .disabled) .btn-set-date:focus::after, .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td:not(.period, .old, .new, .disabled) .btn-set-date:active::after {
+  background-color: #d6e0eb;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.today .btn-set-date span {
+  position: relative;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.today .btn-set-date span::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+  background-color: #d63d4a;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.day-event .btn-set-date {
+  color: #096ab3;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.day-event .btn-set-date span {
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.day-event .btn-set-date span::before {
+  position: absolute;
+  bottom: -38%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "이벤트";
+  font-size: 1rem;
+  font-weight: 700;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.day-off {
+  color: #bd2c0f;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.old, .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.new, .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.disabled {
+  color: #8a949e;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.old button, .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.new button, .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.disabled button {
+  cursor: default;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.period .btn-set-date {
+  background-color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.period.start > .btn-set-date, .krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.period.end > .btn-set-date {
+  background-color: #063a74;
+  color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.period.start > .btn-set-date {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.krds-calendar-area .calendar-wrap .calendar-body .calendar-table-wrap .calendar-tbl td.period.end > .btn-set-date {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+.krds-calendar-area .calendar-wrap .calendar-footer {
+  margin-top: 16px;
+}
+.krds-calendar-area .calendar-wrap .calendar-footer .calendar-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 8px;
+  padding: 16px 24px;
+  border-top: 1px solid #cdd1d5;
+  background-color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap .calendar-footer .calendar-btn-wrap .krds-btn:first-child {
+  margin-right: auto;
+}
+.krds-calendar-area .calendar-wrap:not(.single) .calendar-body .calendar-table-wrap .calendar-tbl td {
+  position: relative;
+}
+.krds-calendar-area .calendar-wrap:not(.single) .calendar-body .calendar-table-wrap .calendar-tbl td::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: calc(100% - 4px);
+  transform: translateY(-50%);
+}
+.krds-calendar-area .calendar-wrap:not(.single) .calendar-body .calendar-table-wrap .calendar-tbl td.period::after {
+  background-color: #ffffff;
+}
+.krds-calendar-area .calendar-wrap:not(.single) .calendar-body .calendar-table-wrap .calendar-tbl td.start::after {
+  background-color: #063a74;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  right: 0;
+  left: unset;
+}
+.krds-calendar-area .calendar-wrap:not(.single) .calendar-body .calendar-table-wrap .calendar-tbl td.end::after {
+  background-color: #063a74;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+.krds-calendar-area .calendar-wrap:not(.single) .calendar-body .calendar-table-wrap .calendar-tbl td.period.start.end::after {
+  display: none;
+}
+.krds-calendar-area.active {
+  display: block;
+}
