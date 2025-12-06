@@ -1,25 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KRDS 따라서 컴포넌트 만들기</title>
   <link rel="stylesheet" href="resources/css/reset.css">
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 </head>
+
 <body>
-  <ul>
-    <li>
-      <a href="./component/accordion.html">accordion</a>
-      <a href="./component/accordion_line.html">accordion_line</a>
-      <a href="./component/badge.html">badge</a>
-      <a href="./component/breadcrumb.html">breadcrumb</a>
-      <a href="./component/button.html">button</a>
-      <a href="./component/link.html">link</a>
-      <a href="./component/input.html">input</a>
-      <a href="./component/textarea.html">textarea</a>
-      <a href="./component/calendar.html">calendar</a>
-    </li>
-  </ul>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    ol {
+      list-style: decimal;
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+  <div>
+    <p>TODO</p>
+    <ol>
+      <li>rem 제거</li>
+      <li>reset.css 정리</li>
+      <li>컴포넌트 css 재작업(변수 재정의 등 같은 변수에 다른 값이 들어있는 경우 처리 안되어있음)</li>
+    </ol>
+  </div>
+  <div>
+    <p>Components</p>
+    <ul>
+      <li>
+        <a href="./component/accordion.html">accordion</a>
+      </li>
+      <li><a href="./component/accordion_line.html">accordion_line</a></li>
+      <li><a href="./component/badge.html">badge</a></li>
+      <li><a href="./component/breadcrumb.html">breadcrumb</a></li>
+      <li><a href="./component/button.html">button</a></li>
+      <li><a href="./component/link.html">link</a></li>
+      <li><a href="./component/input.html">input</a></li>
+      <li><a href="./component/textarea.html">textarea</a></li>
+      <li><a href="./component/calendar.html">calendar</a></li>
+    </ul>
+  </div>
 </body>
+
 </html>
